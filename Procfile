@@ -1,0 +1,1 @@
+web: gunicorn nsuLikeLion.wsgi --log-file -
