@@ -1,0 +1,36 @@
+<body>
+    <form action="{% url 'Apply:evaluation' apply_id %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <!-- <label for="apply_point1">평가점수1</label>
+        <input type="radio" name="apply_point1" value=1>
+        <input type="radio" name="apply_point1" value=2>
+        <input type="radio" name="apply_point1" value=3>
+        <input type="radio" name="apply_point1" value=4>
+        <input type="radio" name="apply_point1" value=5>
+
+        <br>
+        <label for="apply_point2">평가점수2</label>
+        <input type="radio" name="apply_point2" value=1>
+        <input type="radio" name="apply_point2" value=2>
+        <input type="radio" name="apply_point2" value=3>
+        <input type="radio" name="apply_point2" value=4>
+        <input type="radio" name="apply_point2" value=5>
+
+        <br>
+        <label for="apply_point3">평가점수3</label>
+        <input type="radio" name="apply_point3" value=1>
+        <input type="radio" name="apply_point3" value=2>
+        <input type="radio" name="apply_point3" value=3>
+        <input type="radio" name="apply_point3" value=4>
+        <input type="radio" name="apply_point3" value=5>
+
+        <br>
+        <label for="apply_point_comment">평가내용</label>
+        <textarea name="apply_point_comment" id="apply_point_comment" cols="30" rows="10"></textarea> -->
+
+
+        <br>
+        <input type="submit" value="제출">
+    </form>
+</body>
